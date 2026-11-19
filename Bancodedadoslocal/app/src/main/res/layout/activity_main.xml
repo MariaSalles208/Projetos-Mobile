@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/campoID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Informe o ID "
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/campoNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Informe o nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/campoID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/campoID"
+        app:layout_constraintTop_toBottomOf="@+id/campoID" />
+
+    <EditText
+        android:id="@+id/campoPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Informar o preço "
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/campoNome"
+        app:layout_constraintTop_toBottomOf="@+id/campoNome" />
+
+    <Button
+        android:id="@+id/btcadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CADASTRAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/campoPreco"
+        app:layout_constraintTop_toBottomOf="@+id/campoQuantidade" />
+
+    <Button
+        android:id="@+id/btatualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ATUALIZAR"
+        app:layout_constraintEnd_toEndOf="@+id/btcadastrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btcadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/btcadastrar" />
+
+    <Button
+        android:id="@+id/btapagar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="APAGAR"
+        app:layout_constraintEnd_toEndOf="@+id/btatualizar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btatualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btatualizar" />
+
+    <Button
+        android:id="@+id/btbuscarId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Buscar o ID "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btlistar"
+        app:layout_constraintTop_toBottomOf="@+id/btlistar"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <Button
+        android:id="@+id/btlistar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="LISTAR TODOS"
+        app:layout_constraintEnd_toEndOf="@+id/btapagar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btapagar"
+        app:layout_constraintTop_toBottomOf="@+id/btapagar" />
+
+    <EditText
+        android:id="@+id/campoQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Informar a qualidade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/campoPreco"
+        app:layout_constraintTop_toBottomOf="@+id/campoPreco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
