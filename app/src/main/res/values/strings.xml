@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProjetoListViews</string>
+    <string-array name="array_values">
+        <item>Primeiro item </item>
+        <item>Segundo item </item>
+        <item>Terceiro item </item>
+        <item>Quarto item </item>
+        <item>Quinto item </item>
+    </string-array>
+</resources>
